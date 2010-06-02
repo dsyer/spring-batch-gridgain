@@ -24,13 +24,13 @@ and then you will be able to use all the features provided by this project.
 
 ## Features ##
 
-* `GridGainPartitionHandler` can be used to send Step execution work out into a GridGain cluster.  There is an example in the spring-batch-gridgain unit tests:
+`GridGainPartitionHandler` can be used to send Step execution work out into a GridGain cluster.  There is an example in the spring-batch-gridgain unit tests:
 
     <job id="job" xmlns="http://www.springframework.org/schema/batch">
-		<step id="step-master">
-			<partition handler="partitionHandler" step="step"
-				partitioner="partitioner" />
-		</step>
-	</job>
-	<bean id="partitionHandler"
-		class="org.springframework.batch.core.partition.gridgain.GridGainPartitionHandler" />
+       <step id="step-master">
+          <partition handler="partitionHandler" step="step"
+             partitioner="partitioner" />
+       </step>
+    </job>
+    <bean id="partitionHandler"
+       class="org.springframework.batch.core.partition.gridgain.GridGainPartitionHandler" />
