@@ -9,7 +9,7 @@
 	<url>http://www.github.com/dsyer</url>
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
-		<spring.framework.version>3.0.2.RELEASE</spring.framework.version>
+		<spring.framework.version>5.3.19</spring.framework.version>
 		<spring.batch.version>2.1.1.RELEASE</spring.batch.version>
 	</properties>
 	<dependencies>
